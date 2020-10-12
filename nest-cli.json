@@ -1,0 +1,27 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "projects": {
+    "test-lib": {
+      "type": "library",
+      "root": "libs/test-lib",
+      "entryFile": "index",
+      "sourceRoot": "libs/test-lib/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/test-lib/tsconfig.lib.json"
+      }
+    },
+    "test-util": {
+      "type": "library",
+      "root": "libs/test-util",
+      "entryFile": "index",
+      "sourceRoot": "libs/test-util/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/test-util/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true
+  }
+}

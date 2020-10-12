@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "paths": {
+      "@app/test-lib": [
+        "libs/test-lib/src"
+      ],
+      "@app/test-lib/*": [
+        "libs/test-lib/src/*"
+      ],
+      "@app/test-util": [
+        "libs/test-util/src"
+      ],
+      "@app/test-util/*": [
+        "libs/test-util/src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
